@@ -1,5 +1,6 @@
 # SADcipher
 A POC file encryptor that uses xor keys to cipher files in a directory.
+It can encrypt 100 files in under 3-4 seconds.
 
 ## How do I decrypt the files?
 
