@@ -4,7 +4,7 @@ It can encrypt 100 files in under 3-4 seconds.
 
 ## How do I decrypt the files?
 
-Here is a small poc I wrote for the decryption process:
+Here is a small poc code I wrote for the decryption process:
 ```cpp
 FILE* stream = fopen(fName, "rb");
 DWORD size   = 0;//your file size, can be easily found using winAPI functions
