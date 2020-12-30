@@ -14,7 +14,7 @@ DWORD extension      = header->extension ^ header->INT_KEY;
 DWORD originalSize   = header->originalSize ^ header->INT_KEY;
 DWORD first_key      = header->XOR_KEY ^ header->INT_KEY;
 DWORD second_key     = header->ENC_KEY ^ header->INT_KEY;
-void* OriginalBuffer = (BYTE*)buffer+sizeof(SAD_HEADER);
+void* OriginalBuffer = (void*)((BYTE*)buffer+sizeof(SAD_HEADER));
 
 for(int i = 0;i < originalSize/4;i++){
   DWORD* sec = (DWORD*)OriginalBuffer+i;
