@@ -2,6 +2,8 @@
 A POC file encryptor that uses xor keys to cipher files in a directory.<br>
 It can encrypt 100 files in under 3-4 seconds.
 
+The file cannot be decrypted using frequency analsysis.
+
 ## How do I decrypt the files?
 
 Here is a small poc code I wrote for the decryption process:
@@ -26,6 +28,7 @@ for(int i = 0;i < originalSize/4;i++){
   }
 }
 VirtualFree(buffer, 0, MEM_RELEASE);
+fclose(stream);
 ```
 ## Credits
 AlexSimpler 2020
