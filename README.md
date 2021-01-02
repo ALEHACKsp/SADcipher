@@ -1,8 +1,7 @@
 # SADcipher
 A POC file cipher that uses xor keys to encrypt files in a directory.<br>
-It can encrypt 100 files in under 3-4 seconds.
 
-The file cannot be decrypted using frequency analsysis.
+Frequency analysis can be used, but it fails most of the times.
 
 ## How do I decrypt the files?
 
