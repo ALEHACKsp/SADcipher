@@ -1,7 +1,7 @@
 # SADcipher
 A POC file cipher that uses xor keys to encrypt files in a directory.<br>
 
-Frequency analysis can be used, but it almost never work.
+Frequency analysis can be used, but it almost never works.
 
 ## How do I decrypt the files?
 
